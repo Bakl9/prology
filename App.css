@@ -1,0 +1,37 @@
+.app-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-areas:
+  'over over'
+  'v v'
+  'nav content ';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+
+};
+
+.header {
+  grid-area:v;
+  background-color: rgba(138, 54, 54, 0.333);
+   
+}
+
+.over {
+  grid-area:over;
+  background-color: #5555;
+}
+
+.over img {
+  width: 20px;
+}
+
+.nav {
+  grid-area:nav;
+  background-color: rgba(138, 54, 54, 0.333);
+}
+
+.content {
+  grid-area: content;
+  background-color: rgba(24, 173, 81, 0.333);
+}
